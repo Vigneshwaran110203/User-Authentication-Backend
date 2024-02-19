@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
-const dbConnect = require('./db/dbConnect');
+const dbConnect = require('./db/dbConnect.js');
 const bcrypt = require('bcrypt');
-const User = require('./db/userModel');
+const User = require('./db/userModel.js');
 const jwt = require('jsonwebtoken');
-const auth = require("./auth");
+const auth = require("./auth.js");
 
 // body parser configuration
 app.use(bodyParser.json());
